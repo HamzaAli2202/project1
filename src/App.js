@@ -1,22 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { Card, CardContent } from "@mui/material";
+import { PropsMain } from "./components/Props/PropsMain";
+import { ToDoList } from "./components/ToDoList/ToDoList";
+import { ApiFetch } from "./components/ApiFetch/ApiFetch";
+import { Landing } from "./components/Routing/Landing";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1> My First React App </h1> <h5> Happy Coding </h5>{" "}
-        <a
-          className="App-link"
-          href="https://pickupbiz.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn With PickupBiz{" "}
-        </a>{" "}
-      </header>
-    </div>
+    <Card>
+      <CardContent>
+        {/* <PropsMain /> */}
+        {/* <ToDoList /> */}
+        {/* <ApiFetch /> */}
+        <Landing />
+      </CardContent>
+    </Card>
   );
 }
 
